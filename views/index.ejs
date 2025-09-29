@@ -8,13 +8,13 @@
 </head>
 
 <body>
-    <h1>Planets!</h1>
-    <a href="/new">Add a planet</a>
-    <% planets.forEach(planet=> { %>
-        <li><a href="/planets/<%= planet._id %>">
-                <%= planet.name %>
-            </a></li>
-        <% }); %>
+        <h1>Planets!</h1>
+        <a href="/new">Add a planet</a>
+        <% planets.forEach(planet=> { %>
+            <li><a href="/planets/<%= planet._id %>">
+                    <%= planet.name %> 
+                </li>
+            <% }); %>
 
 </body>
 

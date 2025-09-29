@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <a href="/new">Add a planet</a>
     <a href="/planets">Home</a>
-    <h1><%= planet.name %></h1>
-    <p>Description: <%= planet.description %></p>
+    <h1>
+        <%= planet.name %>
+    </h1>
+    <p>Description: <%= planet.description %>
+    </p>
     <p>Size: <%= planet.size %> (miles)</p>
-    <p>Galaxy: <%= planet.galaxy %></p>
- 
+    <p>Galaxy: <%= planet.galaxy %>
+    </p>
+
+    <form action="/planets/<%= planet._id %>?_method=DELETE" method="POST" style="display: inline;">
+        <button type="submit">DELETE <%= planet.name %></button>
+    </form>
+    <a href="/planets/<%= planet._id %>/edit">Edit Planet</a>
+
+
+
+
+
 </body>
 </html>

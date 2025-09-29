@@ -1,0 +1,36 @@
+<!-- Edits a planet -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit <%=planet.name %>
+    </h1>
+    <form action="/planets/<%= planet._id %>?_method=PUT" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" value="<%= planet.name %>" />
+    
+      <label for="description">Description:</label>
+      <input type="text" name="description" id="description" value="<%= planet.description %>" />
+    
+      <label for="size">Size (miles):</label>
+      <input type="number" name="size" id="size" value="<%= planet.size %>" />
+    
+      <label for="galaxy">Galaxy:</label>
+      <input type="text" name="galaxy" id="galaxy" value="<%= planet.galaxy %>" />
+    
+      <button type="submit">Edit Planet</button>
+      <a href="/planets">Back to Home-Page</a>
+      </body>
+</html>
+
+
+<!--   name: String,
+  description: String,
+  size: Number,
+  distance: Number,
+  galaxy: String -->
