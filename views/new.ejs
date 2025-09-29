@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add a new Planet!</h1>
+    <form action="/new" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="description">Description:</label>
+        <input type="text" name="description" id="description" />
+
+        <label for="size">Size (miles):</label>
+        <input type="number" name="size" id="size" />
+
+        <label for="galaxy">Galaxy:</label>
+        <input type="text" name="galaxy" id="galaxy" />
+
+        <button type="submit">Add Trip</button>
+    </form>
+    <a href="/planets">Back to Home-Page</a>
+  </body>
+</html>
+
+<!--   name: String,
+  description: String,
+  size: Number,
+  distance: Number,
+  galaxy: String -->

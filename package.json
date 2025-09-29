@@ -1,0 +1,28 @@
+{
+  "name": "men-stack-crud-app-lab",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Jpangi/men-stack-crud-app-lab#readme",
+  "bugs": {
+    "url": "https://github.com/Jpangi/men-stack-crud-app-lab/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jpangi/men-stack-crud-app-lab.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.3",
+    "nodemon": "^3.1.10"
+  }
+}
